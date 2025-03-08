@@ -100,18 +100,18 @@
 
         wasd {
             bindings = <
-           &kp ESCAPE  &kp Z  &kp X     &kp C           &kp V        &kp T   &kp Y  &kp I  &kp O  &kp P
-           &kp B       &kp A  &kp W     &kp D           &kp R        &kp H   &kp J  &kp K  &kp L  &none
-&kp LCTRL  &mo 2       &kp Q  &kp S     &kp E           &kp F        &kp N   &kp M  &none  &none  &none  &none
-                              &kp CAPS  &kp LEFT_SHIFT  &kp SPACE    &trans  &to 0  &to 2
+           &kp ESCAPE  &kp Z  &kp X     &kp C           &kp V        &kp T    &kp Y  &kp I  &kp O  &kp P
+           &kp B       &kp A  &kp W     &kp D           &kp R        &kp H    &kp J  &kp K  &kp L  &none
+&kp LCTRL  &mo 2       &kp Q  &kp S     &kp E           &kp F        &kp N    &kp M  &none  &none  &none  &none
+                              &kp CAPS  &kp LEFT_SHIFT  &kp SPACE    &kp TAB  &to 0  &to 2
             >;
         };
 
         number_and_symbol {
             bindings = <
-           &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4     &kp N5       &kp NUMBER_6  &kp N7     &kp N8         &kp N9            &kp N0
-           &msc SCRL_UP    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none        &none         &none      &none          &none             &kp APOS
-&kp LCTRL  &msc SCRL_DOWN  &kp LEFT        &kp DOWN_ARROW  &kp RIGHT        &none        &kp EQUAL     &kp MINUS  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp BACKSPACE
+           &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4     &kp N5       &kp NUMBER_6  &kp N7     &kp N8     &kp N9   &kp N0
+           &msc SCRL_UP    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &none        &none         &none      &none      &none    &kp APOS
+&kp LCTRL  &msc SCRL_DOWN  &kp LEFT        &kp DOWN_ARROW  &kp RIGHT        &none        &kp EQUAL     &kp MINUS  &kp COMMA  &kp DOT  &kp QUESTION  &kp BACKSPACE
                                            &none           &kp LEFT_SHIFT   &kp SPACE    &kp RET       &to 1      &to 3
             >;
         };
