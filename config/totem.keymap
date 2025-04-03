@@ -13,7 +13,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define NAV  1
@@ -88,7 +87,7 @@
                        &kp Q        &kp W        &kp E        &kp R        &kp T          &kp Y        &kp U        &kp I        &kp O       &kp P
                        &mt LGUI A   &mt LALT S   &mt LCTRL D  &mt LSHFT F  &kp G          &kp H        &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON
 &mt PRINTSCREEN MINUS  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &mt LC(B) B    &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH            &kp SQT
-                                                 &kp DEL      &lt NAV TAB  &kp SPACE      &lt 3 ENTER  &lt SYM ESC  &kp BSPC
+                                                 &kp DEL      &lt NAV TAB  &lt 3 SPACE    &lt 3 ENTER  &lt SYM ESC  &kp BSPC
             >;
         };
 
@@ -137,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT     &kp HASH       &kp DLLR       &kp PRCNT    &kp CARET     &kp AMPS        &kp RA(U)   &kp SQT     &kp DQT
-        &trans    &kp TILDE  &kp RA(S)      &kp ASTERISK   &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp PIPE
-&trans  &trans    &trans     &kp LS(LC(C))  &kp LS(LC(V))  &trans       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH  &trans
-                             &trans         &gif           &trans       &trans        &kp C_PP        &trans
+        &kp EXCL       &kp AT     &kp HASH       &kp DLLR       &kp PRCNT    &trans        &trans        &trans      &trans      &trans
+        &kp PIPE       &kp TILDE  &kp CARET      &kp ASTERISK   &kp AMPS     &kp C_MUTE    &trans        &trans      &trans      &trans
+&trans  &kp BACKSLASH  &trans     &kp LS(LC(C))  &kp LS(LC(V))  &trans       &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &trans  &trans
+                                  &trans         &trans         &trans       &trans        &kp C_PP      &trans
             >;
         };
 
@@ -163,10 +162,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+            &sys_reset   &kp F10  &kp F7  &kp F4  &kp F1    &trans  &trans  &trans  &trans  &trans
+            &bootloader  &kp F11  &kp F8  &kp F5  &kp F2    &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &trans       &kp F12  &kp F9  &kp F6  &kp F3    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
