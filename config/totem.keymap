@@ -102,7 +102,7 @@
             bindings = <
            &kp ESCAPE  &kp Z  &kp X     &kp C           &kp V        &kp T    &kp Y  &kp I  &kp O  &kp P
            &kp B       &kp A  &kp W     &kp D           &kp R        &kp H    &kp J  &kp K  &kp L  &none
-&kp LCTRL  &mo 2       &kp Q  &kp S     &kp E           &kp F        &kp N    &kp M  &none  &none  &none  &none
+&kp LCTRL  &mo 5       &kp Q  &kp S     &kp E           &kp F        &kp N    &kp M  &none  &none  &none  &none
                               &kp CAPS  &kp LEFT_SHIFT  &kp SPACE    &kp TAB  &to 0  &to 2
             >;
         };
@@ -131,6 +131,15 @@
            &kp B         &kp A         &kp W         &kp D           &kp R        &kp H    &kp J  &kp K  &kp L  &none
 &kp LCTRL  &none         &kp Q         &kp S         &kp E           &kp F        &kp N    &kp M  &none  &none  &none  &none
                                        &kp C         &kp LEFT_SHIFT  &kp SPACE    &kp TAB  &to 3  &none
+            >;
+        };
+
+        nom {
+            bindings = <
+       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
+       &none         &none         &none         &trans        &none     &none         &none   &none   &none   &none
+&none  &none         &none         &none         &none         &none     &none         &none   &none   &none   &none   &none
+                                   &none         &none         &none     &none         &none   &none
             >;
         };
     };
