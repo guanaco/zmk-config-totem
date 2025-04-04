@@ -127,9 +127,9 @@
 
         fps {
             bindings = <
-           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp V        &kp T    &kp Y  &kp I  &kp O  &kp P
+           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5       &kp T    &kp Y  &kp I  &kp O  &kp P
            &kp B         &kp A         &kp W         &kp D           &kp R        &kp H    &kp J  &kp K  &kp L  &none
-&kp LCTRL  &none         &kp Q         &kp S         &kp E           &kp F        &kp N    &kp M  &none  &none  &none  &none
+&kp LCTRL  &kp Z         &kp Q         &kp S         &kp E           &kp X        &kp N    &kp M  &none  &none  &none  &none
                                        &kp C         &kp LEFT_SHIFT  &kp SPACE    &kp TAB  &to 3  &none
             >;
         };
